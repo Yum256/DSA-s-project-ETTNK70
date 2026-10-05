@@ -5,16 +5,22 @@ Cho ba cọc A, B, C và n đĩa có kích thước khác nhau, ban đầu đư�
 -Khi khai báo hàm với n đĩa, ta sẽ cho hàm tự gọi nó với n-1 đĩa.
 -Điều kiện dừng đó là khi n = 1, chuyển đĩa từ A qua C.
 Test case: 
-- input: 1 => ouput: Chuyển đĩa 1 từ A sang C 
-- input: 2 => ouput: Chuyển đĩa 1 từ A sang B 
-                     Chuyển đĩa 2 từ A sang C
-                     Chuyển đĩa 1 từ B sang C
-- input: 3 => ouput: Chuyển đĩa 1 từ A sang C 
-                     Chuyển đĩa 2 từ A sang B
-                     Chuyển đĩa 1 từ C sang B
-                     Chuyển đĩa 3 từ A sang C
-                     Chuyển đĩa 1 từ B sang A
-                     Chuyển đĩa 2 từ B sang C
-                     Chuyển đĩa 1 từ A sang C
+- input: 1
+  => ouput:
+  chuyen dia 1 tu cot A sang cot C 
+- input: 2
+  => ouput:
+  chuyen dia 1 tu cot A sang cot B
+  chuyen dia 2 tu cot A sang cot C
+  chuyen dia 1 tu cot B sang cot C
+- input: 3
+  => ouput: 
+  chuyen dia 1 tu cot A sang cot C
+  chuyen dia 2 tu cot A sang cot B
+  chuyen dia 1 tu cot C sang cot B
+  chuyen dia 3 tu cot A sang cot C
+  chuyen dia 1 tu cot B sang cot A
+  chuyen dia 2 tu cot B sang cot C
+  chuyen dia 1 tu cot A sang cot C
 
   ---Hết---
