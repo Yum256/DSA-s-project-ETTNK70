@@ -42,7 +42,7 @@ int main(){
     for(int i = 0; i < 13; i++){
         scanf("%d", &a[i]);
     }
-    quicksort(a, 0, 12);
+    mergesort(a, 13);
     for(int i = 0; i < 13; i++){
         printf("%d ", a[i]);
     }

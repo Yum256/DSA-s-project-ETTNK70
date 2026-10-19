@@ -1,19 +1,38 @@
 #include<stdio.h>
 void mergearr(int a[], int trai, int giua, int phai){
-    int i = trai;
-    int j = giua + 1;
-    int k = 0;
-    int temp[phai - trai + 1];
-    while(i <= giua && j <= phai){
-        if(a[i] <= a[j]){
-            temp[k++] = a[i++];
+    int n1 = giua - trai + 1;
+    int n2 = phai - giua;
+    int L[n1], R[n2];
+    for(int i = 0; i < n1; i++){
+        L[i] = a[trai + i];
+    }
+    for(int j = 0; j < n2; j++){
+        R[j] = a[giua + 1 + j];
+    }
+    int i = 0, j = 0, k = trai;
+    while(i < n1 && j < n2){
+        if(L[i] <= R[j]){
+            a[k] = L[i];
+            i++;
         }
         else{
-            temp[k++] = a[j++];
+            a[k] = R[j];
+            j++;
         }
+        k++;
     }
-    for(int k = 0; k < 13; k++){
-              printf("%d ", a[k]);}
+    while(i < n1){
+        a[k] = L[i];
+        i++;
+        k++;
+    }
+    while(j < n2){
+        a[k] = R[j];
+        j++;
+        k++;
+    }
+    for(int inx = 0; inx < 13; inx++){
+              printf("%d ", a[inx]);}
         printf("\n");
 }
 void splitmergearr(int a[], int trai, int phai){
