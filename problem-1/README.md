@@ -8,7 +8,7 @@ Secondly, Use 2 indices (dau = num[0] - cuoi = num[n-1]). If num[dau] + num[cuoi
 Test set:<br>
 Case 1:<br>
 Input: 8, 7, 2, 5, 3, 1  - target = 10<br>
-Output: 2, 8
+Output: 2, 8<br>
 Case 2:<br>
 Input: 9, 7, 26, 4, 15, 31, 19  -  target = 25<br>
 Output: not found
