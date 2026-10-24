@@ -10,7 +10,7 @@ Secondly, considering the product of arr[0] and arr[1] with arr[n-1] and arr[n-2
 Test set:<br>
 Case 1:<br>
 Input: 4 3 -6 -8 5 9<br>
-Output: (-6,-8)<br>
+Output: (-8,-6)<br>
 Case 2: <br>
 Input: 6 6 -4 -9 1 4 5<br>
-Ouput: (-4,-9) (6,6)
+Ouput: (-9,-4) (6,6)
